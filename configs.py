@@ -7,7 +7,7 @@ class Config(object):
     API_ID = os.environ.get("API_ID")
     API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    SESSION_NAME = os.environ.get("SESSION_NAME", "Video-Merge_Bot")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "Video-Merger_Bot")
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
     DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
