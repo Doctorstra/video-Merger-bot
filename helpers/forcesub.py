@@ -21,7 +21,7 @@ async def ForceSub(bot: Client, cmd: Message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Sorry Son, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
