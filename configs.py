@@ -7,7 +7,7 @@ class Config(object):
     API_ID = os.environ.get("API_ID")
     API_HASH = os.environ.get("API_HASH")
     BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    SESSION_NAME = os.environ.get("SESSION_NAME", "Video-Merge-Bot")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "Video-Merge_Bot")
     UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL")
     LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
     DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
@@ -25,7 +25,7 @@ This Bot can Merge Multiple Videos in One Video AnD Video Formats should be same
 
 Made by @TheTeleRoid
 """
-    CAPTION = "Video Merged by @{}\n\nMade by @TheTeleRoid"
+    CAPTION = "Video Merged by @{}\n\nMade by\n\n@TheTeleRoid"
     PROGRESS = """
 🛠Percentage : {0}%
 ✅Done: {1}
