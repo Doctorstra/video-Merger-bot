@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @AbirHasan2005 | @PredatorHackerzZ
 
 from pyrogram import Client
 from pyrogram.types import InlineKeyboardButton, Message
