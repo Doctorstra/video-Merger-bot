@@ -1,15 +1,15 @@
 {
     "name": "Telegram Video Merge Bot",
-    "description": "A Telegram Video Merge Bot in Pyrogram by @AbirHasan2005",
+    "description": "A Telegram Video Merge Bot in Pyrogram by @PredatorHackerzZ",
     "keywords": [
         "telegram",
         "video",
         "merge",
         "bot"
     ],
-    "repository": "https://github.com/AbirHasan2005/VideoMerge-Bot",
-    "website": "https://telegram.dog/AbirHasan2005",
-    "success_url": "https://t.me/AH_VideoMergeBot",
+    "repository": "https://github.com/PredatorHackerzZ/Video-Merger_Bot",
+    "website": "https://telegram.dog/TheTeleRoid",
+    "success_url": "https://t.me/TeleRoid_VideoMergeBot",
     "env": {
         "API_ID": {
             "description": "Get this value from my.telegram.org or @TeleORG_Bot"
