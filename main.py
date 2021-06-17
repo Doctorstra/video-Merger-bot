@@ -1,7 +1,7 @@
-# (c) @AbirHasan2005
+# (c) @AbirHasan2005 | @PredatorHackerzZ
 # This is very simple Telegram Videos Merge Bot.
-# Coded by a Nub.
-# Don't Laugh seeing the codes.
+# Coded by a Noob Coder.
+# Don't Laugh seeing these codes.
 # Me learning.
 
 import os
@@ -56,9 +56,9 @@ async def start_handler(bot: Client, m: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")],
-                [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                 InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
+                [InlineKeyboardButton("📌 Source - @PredatorHackerzZ", url="https://GitHub.com/Video-Merger_Bot")],
+                [InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/linux_repo"),
+                 InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/Discovery_Updates")],
                 [InlineKeyboardButton("Open Settings", callback_data="openSettings")]
             ]
         )
@@ -82,7 +82,7 @@ async def videos_handler(bot: Client, m: Message):
         return
     input_ = f"{Config.DOWN_PATH}/{m.from_user.id}/input.txt"
     if os.path.exists(input_):
-        await m.reply_text("Sorry Unkil,\nAlready One in Progress!\nDon't Spam Plox.")
+        await m.reply_text("Sorry Dear,\nAlready One in Progress!\nDon't Spam Plox.\n@TheTeleRoid")
         return
     isInGap, sleepTime = await CheckTimeGap(m.from_user.id)
     if isInGap is True:
@@ -112,7 +112,7 @@ async def videos_handler(bot: Client, m: Message):
         elif len(QueueDB.get(m.from_user.id)) > Config.MAX_VIDEOS:
             markup = await MakeButtons(bot, m, QueueDB)
             await editable.edit(
-                text=f"Sorry Unkil,\nMax {str(Config.MAX_VIDEOS)} Videos Allowed to Merge Together!\nPress **Merge Now** Button Now!",
+                text=f"Sorry Dear,\nMax {str(Config.MAX_VIDEOS)} Videos Allowed to Merge Together!\nPress **Merge Now** Button Now!\n\n@TheTeleRoid",
                 reply_markup=InlineKeyboardMarkup(markup)
             )
 
@@ -126,11 +126,11 @@ async def photo_handler(bot: Client, m: Message):
     editable = await m.reply_text("Saving Thumbnail to Database ...", quote=True)
     await db.set_thumbnail(m.from_user.id, thumbnail=m.photo.file_id)
     await editable.edit(
-        text="Thumbnail Saved Successfully!",
+        text="Your Thumbnail Saved Successfully!",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Show Thumbnail", callback_data="showThumbnail")],
-                [InlineKeyboardButton("Delete Thumbnail", callback_data="deleteThumbnail")]
+                [InlineKeyboardButton("Show Saved Thumbnail", callback_data="showThumbnail")],
+                [InlineKeyboardButton("Delete saved Thumbnail", callback_data="deleteThumbnail")]
             ]
         )
     )
@@ -249,7 +249,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 return
         vid_list = list(set(vid_list))
         if (len(vid_list) < 2) and (len(vid_list) > 0):
-            await cb.message.edit("There only One Video in Queue!\nMaybe you sent same video multiple times.")
+            await cb.message.edit("There only One Video in Queue!\nMaybe you sent same video multiple times.\n\n@TheTeleRoid")
             return
         await cb.message.edit("Trying to Merge Videos ...")
         with open(input_, 'w') as _list:
@@ -283,7 +283,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("Rename File", callback_data="renameFile_Yes")],
-                    [InlineKeyboardButton("Keep Default", callback_data="renameFile_No")]
+                    [InlineKeyboardButton("Keep Default File", callback_data="renameFile_No")]
                 ]
             )
         )
@@ -323,7 +323,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 user = await bot.get_chat_member(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-100") else Config.UPDATES_CHANNEL), user_id=cb.message.chat.id)
                 if user.status == "kicked":
                     await cb.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                        text="Sorry Son, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -346,7 +346,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 return
             except Exception:
                 await cb.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -354,7 +354,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         await cb.message.edit(
             text=Config.START_TEXT,
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005"), InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")], [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Source 📌 - @PredatorHackerzZ", url="https://GitHub.com/PredatorHackerzZ/Video-Merger_Bot"), InlineKeyboardButton("Support Group", url="https://t.me/TeleRoid14")], [InlineKeyboardButton("Bots Channel", url="https://t.me/TeleRoidGroup")]]),
             disable_web_page_preview=True
         )
     elif "showThumbnail" in cb.data:
@@ -366,7 +366,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 photo=db_thumbnail,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Delete Thumbnail", callback_data="deleteThumbnail")]
+                        [InlineKeyboardButton("Delete Saved Thumbnail", callback_data="deleteThumbnail")]
                     ]
                 )
             )
@@ -424,7 +424,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         if (QueueDB.get(cb.from_user.id, None) is None) or (QueueDB.get(cb.from_user.id) == []):
             await cb.answer("Sorry Unkil, Your Queue is Empty!", show_alert=True)
             return
-        merged_vid_path = f"{Config.DOWN_PATH}/{str(cb.from_user.id)}/[@AbirHasan2005]_Merged.{FormtDB.get(cb.from_user.id).lower()}"
+        merged_vid_path = f"{Config.DOWN_PATH}/{str(cb.from_user.id)}/[@PredatorHackerzZ]_Merged.{FormtDB.get(cb.from_user.id).lower()}"
         if cb.data.split("_", 1)[-1] == "Yes":
             await cb.message.edit("Okay Unkil,\nSend me new file name!")
             try:
@@ -441,7 +441,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 await asyncio.sleep(Config.TIME_GAP)
             except:
                 pass
-        await cb.message.edit("Extracting Video Data ...")
+        await cb.message.edit("Extracting Your Video Data ...")
         duration = 1
         width = 100
         height = 100
@@ -514,7 +514,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 await cb.message.edit("Failed to get Screenshots!")
                 await asyncio.sleep(Config.TIME_GAP)
             else:
-                await cb.message.edit("Generated Screenshots Successfully!\nNow Uploading ...")
+                await cb.message.edit("Generated Screenshots Successfully!\nNow Uploading to TG\n@TheTeleRoid...")
                 photo_album = list()
                 if list_images is not None:
                     i = 0
@@ -545,7 +545,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 await cb.message.edit("Failed to Generate Sample Video!")
                 await asyncio.sleep(Config.TIME_GAP)
             else:
-                await cb.message.edit("Successfully Generated Sample Video!\nNow Uploading ...")
+                await cb.message.edit("Successfully Generated Sample Video!\nNow Uploading to TG\n@TheTeleRoid...")
                 sam_vid_duration = 5
                 sam_vid_width = 100
                 sam_vid_height = 100
