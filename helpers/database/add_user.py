@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @AbirHasan2005 | @PredatorHackerzZ
 
 from configs import Config
 from helpers.database.access_db import db
