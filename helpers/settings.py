@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @AbirHasan2005 | @PredatorHackerzZ
 
 import asyncio
 from helpers.database.access_db import db
@@ -14,8 +14,8 @@ async def OpenSettings(m: Message, user_id: int):
                 [
                     [InlineKeyboardButton(f"Upload as {'Video' if (await db.get_upload_as_doc(id=user_id)) is False else 'Document'} ✅", callback_data="triggerUploadMode")],
                     [InlineKeyboardButton(f"Generate Sample Video {'✅' if (await db.get_generate_sample_video(id=user_id)) is True else '❌'}", callback_data="triggerGenSample")],
-                    [InlineKeyboardButton(f"Generate Screenshots {'✅' if (await db.get_generate_ss(id=user_id)) is True else '❌'}", callback_data="triggerGenSS")],
-                    [InlineKeyboardButton("Show Thumbnail", callback_data="showThumbnail")],
+                    [InlineKeyboardButton(f"Generate Sample Screenshots {'✅' if (await db.get_generate_ss(id=user_id)) is True else '❌'}", callback_data="triggerGenSS")],
+                    [InlineKeyboardButton("Show Saved Thumbnail", callback_data="showThumbnail")],
                     [InlineKeyboardButton("Show Queue Files", callback_data="showQueueFiles")]
                 ]
             )
