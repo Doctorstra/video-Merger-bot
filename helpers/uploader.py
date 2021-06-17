@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005
+# (c) @AbirHasan2005 | @PredatorHackerzZ
 import asyncio
 import time
 from configs import Config
@@ -30,9 +30,9 @@ async def UploadVideo(bot: Client, cb: CallbackQuery, merged_vid_path: str, widt
                 ),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")],
-                        [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                         InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")]
+                        [InlineKeyboardButton("Developer - @PredatorHackerzZ", url="https://t.me/TheTeleRoid")],
+                        [InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14"),
+                         InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup")]
                     ]
                 )
             )
@@ -45,15 +45,15 @@ async def UploadVideo(bot: Client, cb: CallbackQuery, merged_vid_path: str, widt
                 thumb=video_thumbnail,
                 progress=progress_for_pyrogram,
                 progress_args=(
-                    "Uploading Video ...",
+                    "Uploading your Video ...",
                     cb.message,
                     c_time
                 ),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("Developer - @AbirHasan2005", url="https://t.me/AbirHasan2005")],
-                        [InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                         InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")]
+                        [InlineKeyboardButton("Developer - @PredatorHackerzZ", url="https://t.me/TheTeleRoid")],
+                        [InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14"),
+                         InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup")]
                     ]
                 )
             )
