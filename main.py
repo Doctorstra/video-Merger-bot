@@ -57,8 +57,8 @@ async def start_handler(bot: Client, m: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("📌 Source - @PredatorHackerzZ", url="https://GitHub.com/PredatorHackerzZ/Video-Merger_Bot")],
-                [InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/linux_repo"),
-                 InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/Discovery_Updates")],
+                [InlineKeyboardButton("⭕ Support ⭕", url="https://t.me/TeleRoid14"),
+                 InlineKeyboardButton("⭕ Channel ⭕", url="https://t.me/TeleRoidGroup")],
                 [InlineKeyboardButton("Open Settings", callback_data="openSettings")]
             ]
         )
