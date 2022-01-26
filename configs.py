@@ -20,12 +20,12 @@ class Config(object):
     BOT_OWNER = int(os.environ.get("BOT_OWNER", 1445283714))
 
     START_TEXT = """
-𝐇𝐞𝐥𝐥𝐨! 𝐃𝐮𝐟𝐟𝐞𝐫, 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐚 𝐕𝐢𝐝𝐞𝐨 𝐌𝐞𝐫𝐠𝐞𝐫 𝐁𝐨𝐭 𝐛𝐲 [@𝐓𝐡𝐞𝐓𝐞𝐥𝐞𝐑𝐨𝐢𝐝](https://t.me/TheTeleRoid)!
+𝐇𝐞𝐥𝐥𝐨! 𝐃𝐮𝐟𝐟𝐞𝐫, 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐚 𝐕𝐢𝐝𝐞𝐨 𝐌𝐞𝐫𝐠𝐞𝐫 𝐁𝐨𝐭 𝐛𝐲 [@Dads_links](https://t.me/Dads_links)!
 𝐓𝐡𝐢𝐬 𝐁𝐨𝐭 𝐜𝐚𝐧 𝐌𝐞𝐫𝐠𝐞 𝐌𝐮𝐥𝐭𝐢𝐩𝐥𝐞 𝐕𝐢𝐝𝐞𝐨𝐬 𝐢𝐧 𝐎𝐧𝐞 𝐕𝐢𝐝𝐞𝐨 𝐀𝐧𝐃 𝐕𝐢𝐝𝐞𝐨 𝐅𝐨𝐫𝐦𝐚𝐭𝐬 𝐬𝐡𝐨𝐮𝐥𝐝 𝐛𝐞 𝐬𝐚𝐦𝐞. 
 
-𝐌𝐚𝐝𝐞 𝐛𝐲 @TheTeleRoid
+𝐌𝐚𝐝𝐞 𝐛𝐲 @Dads_links
 """
-    CAPTION = "𝐕𝐢𝐝𝐞𝐨 𝐌𝐞𝐫𝐠𝐞𝐝 𝐛𝐲 @{}\n\n𝐌𝐚𝐝𝐞 𝐛𝐲\n\n@TheTeleRoid"
+    CAPTION = "𝐕𝐢𝐝𝐞𝐨 𝐌𝐞𝐫𝐠𝐞𝐝 𝐛𝐲 @{}\n\n𝐌𝐚𝐝𝐞 𝐛𝐲\n\n@Dads_links"
     PROGRESS = """
 🛠 𝐏𝐞𝐫𝐜𝐞𝐧𝐭𝐚𝐠𝐞 : {0}%
 ✅ 𝐃𝐨𝐧𝐞: {1}
