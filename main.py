@@ -56,9 +56,9 @@ async def start_handler(bot: Client, m: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("👥 𝐒𝐨𝐮𝐫𝐜𝐞 👥", url="https://GitHub.com/PredatorHackerzZ/Video-Merger_Bot")],
-                [InlineKeyboardButton("⭕ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ⭕", url="https://t.me/TeleRoid14"),
-                 InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/TeleRoidGroup")],
+                [InlineKeyboardButton("👥 𝐒𝐨𝐮𝐫𝐜𝐞 👥", url="https://GitHub.com/Doctorstra")],
+                [InlineKeyboardButton("⭕ 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 ⭕", url="https://t.me/Dads_links"),
+                 InlineKeyboardButton("⭕ 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ⭕", url="https://t.me/Dads_links")],
                 [InlineKeyboardButton("🛠 𝐒𝐞𝐭𝐭𝐢𝐧𝐠𝐬 🛠", callback_data="openSettings")]
             ]
         )
@@ -82,7 +82,7 @@ async def videos_handler(bot: Client, m: Message):
         return
     input_ = f"{Config.DOWN_PATH}/{m.from_user.id}/input.txt"
     if os.path.exists(input_):
-        await m.reply_text("𝐒𝐨𝐫𝐫𝐲 𝐃𝐞𝐚𝐫,\n𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐎𝐧𝐞 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!\n𝐃𝐨𝐧'𝐭 𝐒𝐩𝐚𝐦 𝐏𝐥𝐨𝐱.\n@TheTeleRoid")
+        await m.reply_text("𝐒𝐨𝐫𝐫𝐲 𝐃𝐞𝐚𝐫,\n𝐀𝐥𝐫𝐞𝐚𝐝𝐲 𝐎𝐧𝐞 𝐢𝐧 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬!\n𝐃𝐨𝐧'𝐭 𝐒𝐩𝐚𝐦 𝐏𝐥𝐨𝐱.\n@Dads_links")
         return
     isInGap, sleepTime = await CheckTimeGap(m.from_user.id)
     if isInGap is True:
@@ -112,7 +112,7 @@ async def videos_handler(bot: Client, m: Message):
         elif len(QueueDB.get(m.from_user.id)) > Config.MAX_VIDEOS:
             markup = await MakeButtons(bot, m, QueueDB)
             await editable.edit(
-                text=f"Sorry Dear,\nMax {str(Config.MAX_VIDEOS)} Videos Allowed to Merge Together!\nPress **Merge Now** Button Now!\n\n@TheTeleRoid",
+                text=f"Sorry Dear,\nMax {str(Config.MAX_VIDEOS)} Videos Allowed to Merge Together!\nPress **Merge Now** Button Now!\n\n@Dads_links",
                 reply_markup=InlineKeyboardMarkup(markup)
             )
 
@@ -323,7 +323,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 user = await bot.get_chat_member(chat_id=(int(Config.UPDATES_CHANNEL) if Config.UPDATES_CHANNEL.startswith("-100") else Config.UPDATES_CHANNEL), user_id=cb.message.chat.id)
                 if user.status == "kicked":
                     await cb.message.edit(
-                        text="Sorry Son, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                        text="Sorry Son, You are Banned to use me. Contact my [Support Group](https://t.me/Dads_links).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -346,7 +346,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 return
             except Exception:
                 await cb.message.edit(
-                    text="Something went Wrong. Contact my [ѕυρρσят gяσυρ](https://t.me/TeleRoid14).",
+                    text="Something went Wrong. Contact my [ѕυρρσят gяσυρ](https://t.me/Dads_links).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -354,7 +354,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
         await cb.message.edit(
             text=Config.START_TEXT,
             parse_mode="Markdown",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📕 𝐒𝐨𝐮𝐫𝐜𝐞 ", url="https://GitHub.com/PredatorHackerzZ/Video-Merger_Bot"), InlineKeyboardButton("🌐 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/TeleRoid14")], [InlineKeyboardButton("👥 𝐁𝐨𝐭𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/TeleRoidGroup")]]),
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📕 𝐒𝐨𝐮𝐫𝐜𝐞 ", url="https://GitHub.com/Doctorstra"), InlineKeyboardButton("🌐 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩", url="https://t.me/Dads_links")], [InlineKeyboardButton("👥 𝐁𝐨𝐭𝐬 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url="https://t.me/Dads_links")]]),
             disable_web_page_preview=True
         )
     elif "showThumbnail" in cb.data:
@@ -514,7 +514,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 await cb.message.edit("Failed to get Screenshots!")
                 await asyncio.sleep(Config.TIME_GAP)
             else:
-                await cb.message.edit("Generated Screenshots Successfully!\nNow Uploading to TG\n@TheTeleRoid...")
+                await cb.message.edit("Generated Screenshots Successfully!\nNow Uploading to TG\n@Dads_links...")
                 photo_album = list()
                 if list_images is not None:
                     i = 0
@@ -545,7 +545,7 @@ async def callback_handlers(bot: Client, cb: CallbackQuery):
                 await cb.message.edit("Failed to Generate Sample Video!")
                 await asyncio.sleep(Config.TIME_GAP)
             else:
-                await cb.message.edit("Successfully Generated Sample Video!\nNow Uploading to TG\n@TheTeleRoid...")
+                await cb.message.edit("Successfully Generated Sample Video!\nNow Uploading to TG\n@Dads_links...")
                 sam_vid_duration = 5
                 sam_vid_width = 100
                 sam_vid_height = 100
