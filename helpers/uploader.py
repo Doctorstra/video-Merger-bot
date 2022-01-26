@@ -30,9 +30,9 @@ async def UploadVideo(bot: Client, cb: CallbackQuery, merged_vid_path: str, widt
                 ),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("👨‍💻 ∂єνєℓσρєя 👨‍💻", url="https://t.me/TheTeleRoid")],
-                        [InlineKeyboardButton("⭕ ѕυρρσят ⭕", url="https://t.me/TeleRoid14"),
-                         InlineKeyboardButton("⭕ ¢нαηηєℓ ⭕", url="https://t.me/TeleRoidGroup")]
+                        [InlineKeyboardButton("👨‍💻 ∂єνєℓσρєя 👨‍💻", url="https://t.me/Dads_links")],
+                        [InlineKeyboardButton("⭕ ѕυρρσят ⭕", url="https://t.me/Dads_links"),
+                         InlineKeyboardButton("⭕ ¢нαηηєℓ ⭕", url="https://t.me/Dads_links")]
                     ]
                 )
             )
@@ -51,9 +51,9 @@ async def UploadVideo(bot: Client, cb: CallbackQuery, merged_vid_path: str, widt
                 ),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton("👨‍💻 ∂єνєℓσρєя 👨‍💻", url="https://t.me/TheTeleRoid")],
-                        [InlineKeyboardButton("⭕ ѕυρρσят ⭕", url="https://t.me/TeleRoid14"),
-                         InlineKeyboardButton("⭕ ¢нαηηєℓ ⭕", url="https://t.me/TeleRoidGroup")]
+                        [InlineKeyboardButton("👨‍💻 ∂єνєℓσρєя 👨‍💻", url="https://t.me/Dads_links")],
+                        [InlineKeyboardButton("⭕ ѕυρρσят ⭕", url="https://t.me/Dads_links"),
+                         InlineKeyboardButton("⭕ ¢нαηηєℓ ⭕", url="https://t.me/Dads_links")]
                     ]
                 )
             )
