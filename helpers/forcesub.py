@@ -21,7 +21,7 @@ async def ForceSub(bot: Client, cmd: Message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="ѕσяяу ѕση, уσυ αяє вαηηє∂ тσ υѕє мє. Contact my [ѕυρρσят gяσυρ](https://t.me/TeleRoid14).",
+                text="ѕσяяу ѕση, уσυ αяє вαηηє∂ тσ υѕє мє. Contact my [ѕυρρσят gяσυρ](https://t.me/Dads_links).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -46,7 +46,7 @@ async def ForceSub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="ѕσмєтнιηg ωєηт ωяσηg. Contact my [ѕυρρσят gяσυρ](https://t.me/TeleRoid14).",
+            text="ѕσмєтнιηg ωєηт ωяσηg. Contact my [ѕυρρσят gяσυρ](https://t.me/Dads_links).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
