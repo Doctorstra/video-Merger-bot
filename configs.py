@@ -17,7 +17,7 @@ class Config(object):
     STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS")
     MONGODB_URI = os.environ.get("MONGODB_URI")
     BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
-    BOT_OWNER = int(os.environ.get("BOT_OWNER", 1445283714))
+    BOT_OWNER = int(os.environ.get("BOT_OWNER",1849814176 1988897618))
 
     START_TEXT = """
 𝐇𝐞𝐥𝐥𝐨! 𝐃𝐮𝐟𝐟𝐞𝐫, 𝐓𝐡𝐢𝐬 𝐢𝐬 𝐚 𝐕𝐢𝐝𝐞𝐨 𝐌𝐞𝐫𝐠𝐞𝐫 𝐁𝐨𝐭 𝐛𝐲 [@Dads_links](https://t.me/Dads_links)!
