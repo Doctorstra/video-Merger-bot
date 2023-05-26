@@ -9,3 +9,5 @@ aiofiles
 psutil
 pyromod
 humanfriendly
+hachoir==3.2.0
+pytz==2023.3
