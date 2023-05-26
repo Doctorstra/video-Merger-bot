@@ -1,4 +1,4 @@
-from datetime import datetime 
+ufrom datetime import datetime 
 from pytz import timezone 
 from pyrogram import Client, __version__ 
 from pyrogram.raw.all import layer 
@@ -46,5 +46,6 @@ async def stop(self, *args):
         await super().stop()      
         print("Bᴏᴛ Sᴛᴏᴩᴩᴇᴅ.. Byᴇ")
     
-Bot().run()
+app=Bot()
+app.run()
 
