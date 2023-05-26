@@ -17,6 +17,9 @@
         "API_HASH": {
             "description": "Get this value from my.telegram.org or @TeleORG_Bot"
         },
+        "WEBHOOK": {
+            "description": "good"
+        },
         "BOT_TOKEN": {
             "description": "Get this from @BotFather XD"
         },
