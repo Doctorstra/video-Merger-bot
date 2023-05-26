@@ -15,17 +15,27 @@ services:
         sync: false
       - key: API_HASH
         sync: false
-      - key: FORCE_SUB
+      - key: UPDATES_CHANNEL
         sync: false
       - key: LOG_CHANNEL
         sync: false
-      - key: DB_NAME
+      - key: MONGODB_URI
         sync: false
-      - key: DB_URL
+      - key: TIME_GAP
         sync: false
-      - key: START_PIC
+      - key: BROADCAST_AS_COPY
         sync: false
-      - key: ADMIN
+      - key: BOT_OWNER
+        sync: false
+      - key: STREAMTAPE_API_PASS
+        sync: false
+      - key: STREAMTAPE_API_USERNAME
+        sync: false
+      - key: SESSION_NAME
+        sync: false
+      - key: MAX_VIDEOS
+        sync: false
+      - key: DOWN_PATH
         sync: false
       - key: WEBHOOK
         sync: false
