@@ -4,7 +4,7 @@ pyromod
 humanfriendly
 hachoir
 pytz
-pyrogram
+pyrogram==1.4.16
 TgCrypto
 motor
 dnspython
